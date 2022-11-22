@@ -1,0 +1,146 @@
+
+.MainHeader{
+    margin: 1rem 5rem;
+    display: flex;
+    font-size: 1.1rem;
+    align-content: center;
+    justify-content: right;
+    color: rgb(225, 225, 225);
+    z-index: 23;
+    width: 90%;
+}
+.Main{
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+}
+.Main::-webkit-scrollbar{
+    scrollbar-width: none;  
+}
+.Join{
+    padding: 0.5rem 1.7rem ;
+    background-color: #8100FF;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    font-weight: 600;
+    border :none;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    z-index: inherit;
+}
+.Contact{
+    text-align: center;
+    z-index: inherit;
+    align-self: center;
+    margin-right: 5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.Contact:hover{
+    filter: brightness(150%);
+}
+.AAdisplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 23;
+    margin: 2rem 5%;
+}
+.LogoDisplay{
+        z-index: inherit;
+        width: 39%;
+        margin-right: 10%;
+}
+.text{
+    width: 40%;
+    z-index: inherit;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.MediaSM{
+    display: none;
+}
+
+
+
+.logoHolder,.LogoHead{
+    z-index: 23;
+}
+
+.LogoHead{
+    width:max(9%,100px);
+}
+.componentImage{
+    width:max(7rem,100px);
+}
+.componentText{
+    width:max(15rem,100px);
+}
+.gridElements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 12;
+    text-align: center;
+    width: 40%;
+    flex-grow: 1;
+}
+.SectionDisplay{
+    display: flex;
+    column-gap: 15%;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.HeaderTitle{
+    margin-top: 5%;
+    z-index: 23;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .AAdisplay,.LogoDisplay{
+        flex-direction: column;
+        margin: 0;
+        margin-top: 4rem;
+    }
+    .text{
+        width: 90%;
+    }
+    .LogoDisplay{
+        width: 60%;
+    }
+    .MainHeader{
+        display: none;
+    }
+    .MediaSM{
+        display:flex;
+        margin-top: 3rem;
+    }
+    .SectionDisplay{
+        margin-top: 2rem;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    .HeaderTitle{
+        margin-top: 9rem;
+    }
+    
+}
+@media screen and (max-height: 650px) {
+    .SectionDisplay{
+        flex-wrap: nowrap;
+        margin-bottom: 1rem;
+    }
+    .HeaderTitle{
+        margin: 1rem;
+    }
+
+}

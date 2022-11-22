@@ -1,0 +1,13 @@
+.headerQuestions{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px #8100FF solid;
+}
+
+

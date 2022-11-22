@@ -1,0 +1,189 @@
+.inUpHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 23%;
+    width: 100%;
+    z-index: 23;
+    margin: 0rem 1rem;
+}
+
+.SigninSpan{
+    margin-top: 2rem;
+    z-index: 23;
+}
+.SigninLink{
+    cursor: pointer;
+    margin-left: 10px;
+    color: rgb(212, 212, 212);
+    transition: all 0.5s;
+}
+.SigninLink:hover{
+    color: white;
+}
+.ImageInput{
+    position: absolute;
+    height: 50%;
+    right: 35px;
+    top: 17px;
+}
+.LogoIcon{
+    height: 225px;
+    z-index: inherit;
+
+}
+.Btn{
+    padding: 1rem 1.2rem;
+    letter-spacing: 1.1px;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+.MethBtn{
+    background-color:black;
+    border-color: #923DFF;
+    border-width: 3px;
+    color: #923DFF;
+    border-style: solid;
+}
+.MethBtn:hover{
+    background-color: #260c47;
+    color:rgb(174, 112, 254);
+}
+.Sumb{
+    border:none;
+    background-color: #6e00fe;
+}
+.Sumb:hover{
+    background-color: #923DFF;
+}
+.BtnsSection{
+    display: flex;
+    z-index: 23;
+    margin: 2rem;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+
+}
+.HomeLink{
+    filter: brightness(80%);
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.HomeLink:hover{
+    filter: brightness(110%);
+}
+.SectionInputsSignIns,.SectionInputs{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.SectionInputsSignIns{
+    justify-content: center;
+    row-gap: 0;
+}
+.NameInputs{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 1rem  0 0 ;
+    justify-content: space-between;
+}
+
+.InputDesign{
+    border-radius: 50px;
+    height: 4rem;
+    background-color: black;
+    color: #923DFF;   
+    border-color: #923DFF ;
+    border-style: solid;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+    animation: push 0.5s;
+    width: 100%;
+}
+.InputDesign:focus{
+    outline: none;
+}
+.InputWidth{
+    width: 100%;
+}
+.Relativebox{
+    position: relative;
+    width: 50%;
+    margin: 1rem 0rem;
+}
+.NameInputs>.Relativebox{
+    width: 45%;
+}
+.Labels{
+    position: absolute;
+    color: white;
+    font-size: 1.1rem;
+    z-index: 40;
+    color: #923DFF;
+    top: 20px;
+    left:1.5rem;
+    animation: push 0.5s;
+}
+.LabelsWInputsFocused{
+    top: 2px;
+    font-size: 0.8rem;
+    animation: pull 0.5s;
+}
+@keyframes pull {
+    0%{
+        top:20px;
+        font-size: 1.1rem;
+    }
+   
+    100%{
+        top: 2px;
+        font-size: 0.8rem;
+    }
+}
+@keyframes push {
+    0%{
+        top: 2px;
+        font-size: 0.8rem;
+    }
+    100%{
+        top:20px;
+        font-size: 1.1rem;
+    }
+}
+
+.H1Elm{
+    text-align: center;
+    margin: 0 0.5rem;
+    z-index: 23;
+}
+
+@media screen and (max-width:750px) {
+    .NameInputs{
+        flex-direction: column;
+        width: 85%;
+    }
+    .LogoIcon{
+        width: 25%;
+        height: 25%;
+    }
+    .NameInputs>.Relativebox{
+        width: 100%;
+    }   
+    .Relativebox{
+        width: 85%;
+    }
+}@media screen and (max-width:400px) {
+   
+    .LogoIcon{
+        width: 35%;
+        height: 30%;
+    }
+}
